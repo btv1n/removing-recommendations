@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Removing-recommendations",
+    "version": "1.0.0",
+    "description": "Hides recommendations at the end of videos",
+    "permissions": ["scripting", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "icons": {
+        "16": "assets/icon16.png",
+        "24": "assets/icon24.png",        
+        "32": "assets/icon32.png",
+        "64": "assets/icon32.png",
+        "128": "assets/icon128.png",
+        "256": "assets/icon32.png",
+        "512": "assets/icon32.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Removing-recommendations",
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "24": "assets/icon24.png",        
+            "32": "assets/icon32.png",
+            "64": "assets/icon32.png",
+            "128": "assets/icon128.png",
+            "256": "assets/icon32.png",
+            "512": "assets/icon32.png"
+        }
+    }
+}
